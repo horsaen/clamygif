@@ -6,7 +6,7 @@ import { signIn } from "next-auth/react";
 import { useState } from "react";
 import { BiError } from "react-icons/bi";
 
-import styles from './SignUP.module.css'
+import styles from './SignUp.module.css'
 var url = process.env.NEXTAUTH_URL
 
 export default function SignUp(){
