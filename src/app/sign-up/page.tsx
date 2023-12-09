@@ -58,7 +58,7 @@ export default function SignUp(){
   return (
     <div className={styles.page}>
       <div className={styles.loginCard}>
-        <span className={styles.title}>Sign In</span>
+        <span className={styles.title}>Sign Up</span>
         {error ?
           <div className={styles.error}>
             <BiError />
