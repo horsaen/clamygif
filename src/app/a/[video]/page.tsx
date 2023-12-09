@@ -26,7 +26,7 @@ export async function generateMetadata(
     openGraph: {
       title: " ",
       type: "video.other",
-      videos: url + "/api/view/" + id
+      videos: [url + "/api/view/" + id, {url: url + "/api/view/" + id}]
     },
   }
 }
