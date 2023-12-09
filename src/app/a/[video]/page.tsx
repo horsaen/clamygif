@@ -25,7 +25,7 @@ export async function generateMetadata(
     title: "clamygif",
     description: " ",
     openGraph: {
-      title: String(Date.now()),
+      title: " ",
       type: "video.other",
       videos: [url + "/api/view/" + id + ".mp4", {url: url + "/api/view/" + id + ".mp4"}]
     },
