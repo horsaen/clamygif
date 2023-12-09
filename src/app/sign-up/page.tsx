@@ -22,7 +22,7 @@ export default function SignUp(){
     }
     var data = {"email": e.target.email.value, "username": e.target.username.value, "password": e.target.password.value}
 
-    const res = await axios.post(url + '/api/accountservice', data)
+    const res = await axios.post('/api/accountservice', data)
 
     var user = res.data
     
