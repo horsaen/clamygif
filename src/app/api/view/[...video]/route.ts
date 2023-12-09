@@ -6,7 +6,9 @@ import User from '@/lib/models/Users';
 export async function GET(_req, { params }) {
   await dbConnect();
 
-  const uploadId = params.video[0];
+  // const uploadId = params.video[0]
+  const uploadId = params.video[0].split('.')[0];
+  console.log(uploadId)
 
   const user = await User.findOne({'uploads.uploadId':uploadId}, {'uploads.$': 1, username: 1})
 

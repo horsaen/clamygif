@@ -8,6 +8,7 @@ import CopyToClipboard from '@/components/clientButtons/CopyToClipboard';
 import styles from './Video.module.css'
 
 const url = process.env.NEXTAUTH_URL
+// const url = "https://de34-199-120-65-140.ngrok-free.app"
 
 type Props = {
   params: { video: string }
@@ -24,9 +25,9 @@ export async function generateMetadata(
     title: "clamygif",
     description: " ",
     openGraph: {
-      title: " ",
+      title: String(Date.now()),
       type: "video.other",
-      videos: [url + "/api/view/" + id, {url: url + "/api/view/" + id}]
+      videos: [url + "/api/view/" + id + ".mp4", {url: url + "/api/view/" + id + ".mp4"}]
     },
   }
 }
