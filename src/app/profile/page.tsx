@@ -1,6 +1,6 @@
 import { getServerSession } from "next-auth";
 import Link from "next/link";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { authOptions } from "@/lib/auth";
 import dbConnect from '@/lib/dbConnect';
 import User from '@/lib/models/Users';
 const url = process.env.NEXTAUTH_URL

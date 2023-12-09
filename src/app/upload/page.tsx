@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { authOptions } from "@/lib/auth";
 import { getServerSession } from "next-auth";
 
 import styles from './Upload.module.css'

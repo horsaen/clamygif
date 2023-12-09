@@ -1,5 +1,5 @@
 import type { Metadata, ResolvingMetadata } from 'next'
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { authOptions } from "@/lib/auth";
 import { getServerSession } from "next-auth";
 import axios from 'axios'
 import Navbar from '@/components/navbar/Navbar'
