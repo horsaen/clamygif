@@ -1,0 +1,62 @@
+.page {
+  margin: 4em 8em 0;
+  display: flex;
+}
+.profile,
+.uploads {
+  padding: 0 20px;
+}
+.profile {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+.image svg {
+  height: 100px;
+  width: 100px;
+  margin-right: 20px
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.buttons {
+  padding-top: 10px;
+  display: flex;
+  width: fit-content;
+}
+.page button {
+  all: unset;
+  border-radius: 6px;
+  border: 1px solid #cdd6f4;
+  padding: 3px;
+  margin-right: 5px;
+  display: flex;
+  align-content: center;
+  cursor: pointer;
+}
+.page a {
+  color: inherit;
+}
+.page button:hover {
+  background-color: #cdd6f4;
+  transition: all 0.4s ease;
+  color: #303446;
+}
+.upload {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  background-color: #414559;
+  width: 560px;
+}
+.upload div {
+  display: flex;
+  align-items: center;
+}
+.upload video {
+  margin-right: 5px;
+}

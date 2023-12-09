@@ -1,0 +1,43 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar button {
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+}
+.left {
+  display: flex;
+  align-self: center;
+  font-size: 30px;
+  margin: 5px 10px;
+}
+.left a {
+  text-decoration: none;
+  color: #cdd6f4;
+}
+.profile div {
+  display: flex;
+  margin-right: 5px;
+}
+.profile a {
+  text-decoration: none;
+  color: inherit;
+}
+.profile button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  margin: 0 5px;
+  border-radius: 6px;
+  border: 1px solid #cdd6f4;
+  width: auto;
+  cursor: pointer;
+}
