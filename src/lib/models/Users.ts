@@ -11,8 +11,8 @@ const UserSchema = new mongoose.Schema({
   username: {
     type: String,
     required: true,
-    unique: true,
     maxlength: 20,
+    unique: true
   },
   password: {
     type: String,
@@ -20,7 +20,7 @@ const UserSchema = new mongoose.Schema({
   },
   email: {
     type: String,
-    unique: true,
+    unique: true
   },
   uploads: [{
     uploadId: {
@@ -36,7 +36,7 @@ const UserSchema = new mongoose.Schema({
     },
     filename: {
       type: String,
-      required: true
+      required: true,
     }
   }]
 })
