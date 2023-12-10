@@ -26,7 +26,6 @@ const UserSchema = new mongoose.Schema({
     uploadId: {
       type: String,
       required: true,
-      unique: true
     },
     title: {
       type: String,
@@ -37,8 +36,7 @@ const UserSchema = new mongoose.Schema({
     },
     filename: {
       type: String,
-      required: true,
-      unique: true
+      required: true
     }
   }]
 })
