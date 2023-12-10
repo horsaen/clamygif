@@ -45,7 +45,7 @@ export default async function A({ params }: Props){
     <>
       <Navbar user={user} />
       <div className={styles.page}>
-        <video height="400" controls autoPlay>
+        <video height="400" controls autoPlay muted>
           <source src={url + "/api/view/" + params.video} />
         </video>
         <div className={styles.info}>

@@ -6,6 +6,8 @@ import dbConnect from '../../../lib/dbConnect';
 import User from '../../../lib/models/Users';
 
 export async function POST(req) {
+  if (!fs.existsSync("./data")) {fs.mkdirSync("./data")}
+
   const data = await req.formData()
 
   var file = data.get("file"), 
