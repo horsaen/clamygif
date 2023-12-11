@@ -9,11 +9,12 @@ export async function GET() {
 
 export async function DELETE(req){
   const data = await req.json()
+  
+  const uploadData = await User.findOne({'uploads.uploadId': data.uploadId})
 
-  const deleteVideo = await User.findOneAndUpdate({ secret: data.secret }, { $pull: {uploads: {uploadId: data.uploadId}} })
+  await User.findOneAndUpdate({ secret: data.secret }, { $pull: {uploads: {uploadId: data.uploadId}} })
 
-  console.log(deleteVideo)
+  fs.rmSync(`./data/${uploadData.username}/${uploadData.uploads[0].filename}`)
 
-  return NextResponse.json("", {status: 200})
-  // await dbConnect()
+  return NextResponse.json(null, {status: 200})
 }
