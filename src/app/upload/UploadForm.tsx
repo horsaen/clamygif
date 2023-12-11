@@ -8,7 +8,7 @@ import { LuFilePlus2 } from "react-icons/lu";
 
 export default function UploadForm(props){
 
-  const [file, setFile]: any = useState("Click to Upload File (50MiB limit)")
+  const [file, setFile]: any = useState("Click to Upload File (215MiB limit)")
   const [err, setErr]: any = useState(undefined)
 
   const uploadFile = async (e) => {
@@ -41,7 +41,7 @@ export default function UploadForm(props){
         className={styles.uploadFile} 
         type="file" 
         onChange={(e)=> {
-          if (e.target.files && e.target.files[0].size > 52428800) {
+          if (e.target.files && e.target.files[0].size > 225443840) {
             setErr("File too large")
           } else {
             setErr(undefined)

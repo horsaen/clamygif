@@ -22,7 +22,7 @@ export async function POST(req) {
     return NextResponse.json(null, {status: 404})
   }
 
-  if(size > 52428800) {
+  if(size > 225443840) {
     return NextResponse.json({ERR: "toolarge"}, {status: 200})
   }
 
