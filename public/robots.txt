@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /a/
+Disallow: /profile/
+Disallow: /upload/
